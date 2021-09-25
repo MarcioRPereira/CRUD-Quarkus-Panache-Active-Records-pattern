@@ -1,4 +1,6 @@
-# crudquarkus Project
+Esse projeto tem fins acadêmicos, construído durante as aulas de Linguagens técnicas de programação II com a turma de Sistemas de Informação (3º ano, 2021) da UNILAGO (São José do Rio Preto).
+
+# CRUD-Quarkus-Panache-Active-Records-Pattenr Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
