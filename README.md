@@ -1,4 +1,21 @@
-Esse projeto tem fins acadêmicos, construído durante as aulas de Linguagens técnicas de programação II com a turma de Sistemas de Informação (3º ano, 2021) da UNILAGO (São José do Rio Preto).
+# Descrição
+
+Esse projeto tem fins acadêmicos, construído e evoluido durante as aulas de Linguagens técnicas de programação II com a turma de Sistemas de Informação (3º ano, 2021) da UNILAGO (São José do Rio Preto).
+
+# Script do banco (SQL)
+
+Está em script.sql, na raiz do repositório. 
+
+# Stack
+
+Utilizaremos Quarkus Framework, com banco de dados MySQL.
+Utilizaremos as extesões:
+- RESTEasy JAX-RS
+- RESTEasy Jackson
+- RESTEasy JSON-B
+- JDBC Driver - MySQL
+- Hibernate ORM with Panache
+
 
 # CRUD-Quarkus-Panache-Active-Records-Pattenr Project
 
