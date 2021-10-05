@@ -9,7 +9,7 @@ Está em script.sql, na raiz do repositório.
 # Stack
 
 Utilizaremos Quarkus Framework, com banco de dados MySQL.
-Utilizaremos as extesões:
+Utilizaremos as extensões:
 - RESTEasy JAX-RS
 - RESTEasy Jackson
 - RESTEasy JSON-B
@@ -17,7 +17,7 @@ Utilizaremos as extesões:
 - Hibernate ORM with Panache
 
 
-# CRUD-Quarkus-Panache-Active-Records-Pattenr Project
+# CRUD-Quarkus-Panache-Active-Records-Pattern Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
