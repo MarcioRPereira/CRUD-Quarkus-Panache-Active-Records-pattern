@@ -5,6 +5,7 @@ import java.util.List;
 import javax.transaction.Transactional;
 import javax.ws.rs.BadRequestException;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.NotFoundException;
 import javax.ws.rs.POST;
@@ -72,6 +73,19 @@ public class PessoaResource {
         entity.persist();
 
         return Response.status(Status.OK).entity(entity).build();
+    }
+
+    @DELETE
+    @Transactional
+    @Path("/{id}")
+    public Response delete(@PathParam("id") Long id){
+        Pessoa entity = Pessoa.findById(id);
+        if (entity == null){
+            throw new NotFoundException();
+        }
+        entity.delete();
+
+        return Response.status(Status.OK).build();
     }
     
 }
