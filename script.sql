@@ -9,8 +9,8 @@ create table estado(
 
 create table cidade(
 	id int primary key auto_increment,
-    descricao varchar(200),
-    uf varchar(2),
+    descricao varchar(200) not null,
+    uf varchar(2) not null,
     foreign key (uf) references estado (uf) on delete cascade on update no action
 )ENGINE = innodb;
 
@@ -28,9 +28,11 @@ insert into estado values ('SP', 'São Paulo');
 insert into estado values ('RJ', 'Rio de Janeiro');
 insert into estado values ('MG', 'Minas Gerais');
 insert into estado values ('ES', 'Espírito Santo');
+insert into estado values ('BA', 'Bahia');
 
 insert into cidade values (null, 'São Paulo', 'SP');
 insert into cidade values (null, 'São José do Rio Preto', 'SP');
 insert into cidade values (null, 'Rio de Janeiro', 'RJ');
 insert into cidade values (null, 'Belo Horizonte', 'MG');
 insert into cidade values (null, 'Vitória', 'ES');
+insert into cidade values (null, 'Salvador', 'BA');

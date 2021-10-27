@@ -14,6 +14,6 @@ public class EstadoResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Estado> getAll(){
-        return Estado.list("order by uf desc");
+        return Estado.list("order by uf asc");
     }
 }

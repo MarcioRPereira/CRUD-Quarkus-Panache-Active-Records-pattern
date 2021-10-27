@@ -51,6 +51,10 @@ public class PessoaResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response create(Pessoa pessoa){
+        if(pessoa.cpf.equals("")){
+            throw new BadRequestException("Cpf é obrigatório");
+        }
+
         pessoa.persist();
         return Response.status(Status.CREATED).entity(pessoa).build();
     }
@@ -69,6 +73,8 @@ public class PessoaResource {
         entity.nome = pessoa.nome;
         entity.cpf = pessoa.cpf;
         entity.idade = pessoa.idade;
+        entity.endereco = pessoa.endereco;
+        entity.cidade_id = pessoa.cidade_id;
 
         entity.persist();
 
